@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 })
 );
 
-export default function HmpePage() {
+export default function HomePage() {
   const classes = useStyles();
   return (
 
