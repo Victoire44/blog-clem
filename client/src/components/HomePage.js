@@ -22,8 +22,14 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     padding: 60,
   },
-  contact: {
-    // display: 'inline-block'
+  entrer: {
+    textDecoration: 'none'
+  },
+  logo: {
+    fontSize: 25,
+    color: '#000',
+    margin: 20,
+    verticalAlign: 'middle'
   }
 })
 );
@@ -35,14 +41,16 @@ export default function HomePage() {
     <div>
       <Grid container>
         <Grid item xs={6}>
-          <img className={classes.image} src="images/portrait.jpg" alt="portrait"></img>
+          <img className={classes.image} src='images/portrait.jpg' alt='portrait'></img>
         </Grid>
         <Grid item xs={6} className={classes.display}>
           <h1>Clémence B.</h1>
-          <div classeName={classes.contact}>
-            <Button variant="contained" className={classes.button}>ENTRER</Button>
-            <a href="https://www.instagram.com/_clemence_b/" target='_blank'>
-              <i class="fa fa-instagram" ></i>
+          <div>
+            <a href='https://www.clemenceb.com/' className={classes.entrer}>
+              <Button variant="contained" className={classes.button}>ENTRER</Button>
+            </a>
+            <a href='https://www.instagram.com/_clemence_b/' target='_blank' className={classes.logo} >
+              <i class='fa fa-instagram' ></i>
             </a>
           </div>
         </Grid>
